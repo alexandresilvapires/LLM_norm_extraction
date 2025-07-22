@@ -76,8 +76,6 @@ templates_publicreputation = [None] * len(templates)
 
 for i in range(len(templates)):
     templates_universalization[i] = templates[i] + universalization_instruction + "\n" + format_instruction
-    templates_privatereputation[i] = templates[i] + privatereputation_instruction + "\n" + format_instruction
-    templates_publicreputation[i] = templates[i] + publicreputation_instruction + "\n" + format_instruction
     templates_motivation[i] = templates[i] + motivation_instruction + "\n" + format_instruction
     templates_empathizing[i] = templates[i] + empathizing_instruction + "\n" + format_instruction
     templates_signaling[i] = templates[i] + signaling_instruction + "\n" + format_instruction
