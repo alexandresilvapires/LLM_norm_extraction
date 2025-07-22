@@ -1,0 +1,39 @@
+[
+    {"[NAME]": "Kevin", "[GENDER]":"M", "[REGION]":"WEST"},
+    {"[NAME]": "Liam", "[GENDER]":"M", "[REGION]":"WEST"},
+    {"[NAME]": "Alice", "[GENDER]":"F", "[REGION]":"WEST"},
+    {"[NAME]": "Olivia", "[GENDER]":"F", "[REGION]":"WEST"},
+    
+    {"[NAME]": "Takeshi", "[GENDER]":"M", "[REGION]":"EASTASIA"},
+    {"[NAME]": "Wei", "[GENDER]":"M", "[REGION]":"EASTASIA"},
+    {"[NAME]": "Mei", "[GENDER]":"F", "[REGION]":"EASTASIA"},
+    {"[NAME]": "Yumi", "[GENDER]":"F", "[REGION]":"EASTASIA"},
+
+    {"[NAME]": "Abebe", "[GENDER]":"M", "[REGION]":"SUBSAHARA"},
+    {"[NAME]": "Kwesi" ,"[GENDER]":"M", "[REGION]":"SUBSAHARA"},
+    {"[NAME]": "Zanele", "[GENDER]":"F", "[REGION]":"SUBSAHARA"},
+    {"[NAME]": "Chimamanda", "[GENDER]":"F", "[REGION]":"SUBSAHARA"},
+
+    {"[NAME]": "Omar", "[GENDER]":"M", "[REGION]":"MENA"},
+    {"[NAME]": "Hassan", "[GENDER]":"M", "[REGION]":"MENA"},
+    {"[NAME]": "Layla", "[GENDER]":"F", "[REGION]":"MENA"},
+    {"[NAME]": "Aaliyah", "[GENDER]":"F", "[REGION]":"MENA"},
+
+    {"[TOPIC]": "", "[TAG]":"no-topic"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] is asking [DONOR_NAME] to help with a problem.", "[TAG]":"neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] is asking if [DONOR_NAME] could help them.", "[TAG]":"neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] is asking [DONOR_NAME] to give them some money.", "[TAG]":"non-neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] is asking [DONOR_NAME] for food to eat.", "[TAG]":"non-neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] needs help dealing with a problem, and thus is asking [DONOR_NAME] to help them. Helping [RECEIVER_NAME] would naturally cost [DONOR_NAME] time and energy, but [RECEIVER_NAME] would save more time and energy.", "[TAG]":"explicit-neutral"},
+
+    {"[TOPIC]": " [DONOR_NAME] is being asked by [RECEIVER_NAME] to help. Helping [RECEIVER_NAME] costs [DONOR_NAME] time and money, but [RECEIVER_NAME] would save even more time and money.", "[TAG]":"explicit-neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] needs money to eat, and is asking [DONOR_NAME] to help. Helping [RECEIVER_NAME] would cost [DONOR_NAME] money, but [RECEIVER_NAME] would be able to eat, which is a greater benefit.", "[TAG]":"explicit-non-neutral"},
+
+    {"[TOPIC]": " [RECEIVER_NAME] is asking [DONOR_NAME] to give them some money. Helping [RECEIVER_NAME] would cost [DONOR_NAME] some money, but [RECEIVER_NAME] would incur a greater benefit than that cost, as [RECEIVER_NAME] needs it more.", "[TAG]":"explicit-non-neutral"}
+]
