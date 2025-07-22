@@ -61,9 +61,9 @@ const valsGossip::Vector{Int} = utils.generate_gossip_range(popsize*10, 101)
 const valsbc::Vector{Float64} = collect(1.0:0.1:8.0)
 
 # Additional settings
-const justGenPlots::Bool = true         # if true, instead of generating data and plotting it, it just accesses the folder to generate the plots
+const justGenPlots::Bool = false         # if true, instead of generating data and plotting it, it just accesses the folder to generate the plots
 
-foldername::String = "norm_analysis_intervention"     # change folder name for each experiment
+foldername::String = "norm_analysis"     # change folder name for each experiment
 
 # Premade functions for studies below
 
@@ -117,7 +117,7 @@ function norm_analysis(norm_names::Vector, all_norms, main_norms::Vector, all_no
     # First plots: All main norms, for bad part and good part
     println("Plotting average norms of all models")
     norm_analysis_plot(plotpath,norm_names,main_norms,L"\text{LLM Social Norms = }(-,-, d_{BC}, d_{BD})","llm_norm_plot_bad", "Models", special_labels = false,color_map=Dict{String, Any}(), plot_ellipse=plot_ellipse, all_norms_std_dev=all_norms_std_dev, std_devs=1.0, families=A_norm_families, clarify_left_edge=true)
-    #norm_analysis_plot(plotpath,norm_names,main_norms,L"\text{LLM Social Norms = }(d_{GC}, d_{GD},-,-)","llm_norm_plot_good", "Models", special_labels = false,color_map=Dict{String, Any}(), for_good_norm=true, plot_ellipse=plot_ellipse, all_norms_std_dev=all_norms_std_dev, std_devs=1.0, families=A_norm_families)
+    norm_analysis_plot(plotpath,norm_names,main_norms,L"\text{LLM Social Norms = }(d_{GC}, d_{GD},-,-)","llm_norm_plot_good", "Models", special_labels = false,color_map=Dict{String, Any}(), for_good_norm=true, plot_ellipse=plot_ellipse, all_norms_std_dev=all_norms_std_dev, std_devs=1.0, families=A_norm_families)
 
     # Second plots: Per LLM detailed norms, separated by part of focus
     if plot_detailed_norms
@@ -314,7 +314,7 @@ plotpath::String = "./results_cooperation/"*foldername
 
 
 
-#norm_analysis(A_norm_names, all_A_norms, A_norms, all_A_norms_std_dev; plot_ellipse=true, plot_detailed_norms=false)
+norm_analysis(A_norm_names, all_A_norms, A_norms, all_A_norms_std_dev; plot_ellipse=true, plot_detailed_norms=false)
 #plot_bias_analysis(plotpath, A_norm_names, all_A_norms)
 #variance_plotter(all_A_norms, A_norm_names, plotpath)
 #b_study_with_uncertainty()
